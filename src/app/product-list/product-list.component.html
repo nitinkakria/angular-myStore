@@ -1,5 +1,5 @@
 <h2>Products</h2>
-<div *ngFor="let product of products; index as productId">
+<div class="myCard" *ngFor="let product of products; index as productId">
 	<h3><a [title]="product.name + ' description'" [routerLink]="['/products',productId]"> {{product.name}}</a></h3>
 	<p *ngIf="product.description">{{product.description}}</p>
 	<button (click)="share()">Share</button>
